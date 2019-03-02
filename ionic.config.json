@@ -1,5 +1,7 @@
 {
   "name": "ReadNews",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

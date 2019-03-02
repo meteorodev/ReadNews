@@ -1,12 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      TEXT-SPEECH 
     </ion-title>
+   
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://beta.ionicframework.com/docs/">docs</a> will be your guide.</p>
+  <ion-text>
+    text to speech
+  </ion-text>
+  <ion-item>
+    <ion-label position="floating">Texto</ion-label>
+    <ion-textarea [(ngModel)]="new2Read"></ion-textarea>
+  </ion-item>
+  <ion-button (click)="readText()">
+    <ion-icon slot="icon-only" name="volume-high"></ion-icon>
+  </ion-button>
+  
 </ion-content>
